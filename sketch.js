@@ -158,7 +158,7 @@ function emeralds() {
 }
 
 function obstacles() {
- if(frameCount % 300 === 0) {
+ if(frameCount % 250 === 0) {
     var obstacle = createSprite(600,310,20,20);
     obstacle.addImage(obstacleImage);
     obstacle.velocityX = -6;
