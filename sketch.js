@@ -50,10 +50,10 @@ function setup() {
   diamondGroup = new Group();
   arrowGroup = new Group();
   
-   gameOver = createSprite(runner.x-20,runner.y);
+   gameOver = createSprite(displayWidth/2,displayHeight/2-20);
   gameOver.addImage(gameOverImg);
   
-  restart = createSprite(runner.x,runner.y);
+  restart = createSprite(displayWidth/2,displayHeight/2);
   restart.addImage(restartImg);
   
   gameOver.scale = 0.5;
