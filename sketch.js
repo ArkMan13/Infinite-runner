@@ -4,6 +4,7 @@ var emerald, emeraldImage, obstacle,obstacleImage, obstacleWall;
 var diamond,diamondImage, arrow, arrowImage;
 var emeraldGroup, diamondGroup, arrowGroup, obstacleGroup, obstacleWallGroup;
 var ground,groundImage; 
+var backGroundImg;
 var score = 0;
 var PLAY = 1
 var END = 0
@@ -17,7 +18,8 @@ function preload(){
   obstacleImage = loadImage("stone.png");
   emeraldImage = loadImage("emerald.png");
   diamondImage = loadImage("diamond.png")
-  arrowImage = loadImage("arrow.png")
+  arrowImage = loadImage("arrow.png");
+  backGroundImg = loadImage("jungle.jpg");
   
   
   runner_running = loadAnimation("bib1.png", "bib2.png", "bib3.png", "bib4.png");
@@ -62,7 +64,7 @@ function setup() {
 }
 
 function draw() {
-  background("black");
+  background(backGroundImg);
   
   textSize(20);
   text("Survival Time ="+survivalTime,380,60);
