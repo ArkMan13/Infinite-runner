@@ -74,6 +74,9 @@ function draw() {
     survivalTime = survivalTime + Math.round(getFrameRate()/60);
     ground.velocityX = -(6 + 3*score/100);
    
+   camera.x= runner.x;
+   camera.y=runner.y;
+   
   if(ground.x<0) {
    ground.x = ground.width/2
  }
