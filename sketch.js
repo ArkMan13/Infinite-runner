@@ -50,10 +50,10 @@ function setup() {
   diamondGroup = new Group();
   arrowGroup = new Group();
   
-   gameOver = createSprite(300,100);
+   gameOver = createSprite(runner.x-20,runner.y);
   gameOver.addImage(gameOverImg);
   
-  restart = createSprite(300,140);
+  restart = createSprite(runner.x,runner.y);
   restart.addImage(restartImg);
   
   gameOver.scale = 0.5;
@@ -64,13 +64,13 @@ function setup() {
 }
 
 function draw() {
-  background(backGroundImg);
+  background("jungle.jpg");
   
   textSize(20);
-  text("Survival Time ="+survivalTime,380,60);
+  text("Survival Time ="+survivalTime,runner.x+30,runner.y-50);
   
   textSize(20);
-  text("Score ="+score,80,60);
+  text("Score ="+score,runner.x,runner.y-50);
   
  if (gameState===PLAY){
     survivalTime = survivalTime + Math.round(getFrameRate()/60);
