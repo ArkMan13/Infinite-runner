@@ -19,7 +19,7 @@ function preload(){
   emeraldImage = loadImage("emerald.png");
   diamondImage = loadImage("diamond.png")
   arrowImage = loadImage("arrow.png");
-  backGroundImg = loadImage("jungle.jpg");
+  backGroundImg = loadImage("background.png");
   
   
   runner_running = loadAnimation("bib1.png", "bib2.png", "bib3.png", "bib4.png");
