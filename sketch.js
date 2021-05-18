@@ -64,7 +64,7 @@ function setup() {
 }
 
 function draw() {
-  background("black");
+  background(backGroundImg);
   
   textSize(20);
   text("Survival Time ="+survivalTime,10,150);
