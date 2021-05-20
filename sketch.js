@@ -77,7 +77,6 @@ function draw() {
     ground.velocityX = -(6 + 3*score/100);
    
    camera.x= runner.x;
-   camera.y=runner.y;
    
   if(ground.x<0) {
    ground.x = ground.width/2
@@ -164,7 +163,7 @@ function emeralds() {
 
 function obstacles() {
  if(frameCount % 250 === 0) {
-    var obstacle = createSprite(600,310,20,20);
+    var obstacle = createSprite(600,320,20,20);
     obstacle.addImage(obstacleImage);
     obstacle.velocityX = -6;
     obstacleGroup.add(obstacle);
